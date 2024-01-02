@@ -1,44 +1,51 @@
+// Navbar.js
+
 import React from 'react';
+
 
 const Navbar = () => {
   return (
-    <nav className="bg-navbar p-1">
-      <div className="container mx-auto flex justify-between items-center px-20">
-        
+    <nav className="bg-navbar p-1 fixed w-full top-0 z-10">
+      <div className="container mx-auto flex flex-col md:flex-row md:justify-between items-center px-20">
         {/* Logo */}
         <div className="text-white font-bold text-lg md:mr-5">
-          <img src={'/logo 1.png'} alt="Your Logo" className="h-20" />
+          <img
+            src={'/logo 1.png'}
+            alt="Your Logo"
+            className="h-20"
+          />
         </div>
 
         {/* Navigation Links */}
-        <div className="flex-grow flex flex-row md:justify-between mx-8 px-20">
-          {navLinks.map((link, index) => (
-            <NavLink key={index} label={link.label} />
-          ))}
+        <div className="flex-grow flex flex-row md:justify-between mr-8 px-20">
+          <a href="/" className="text-navbar-link hover:border-b pb-1 px-1">
+            Home
+          </a>
+          <a href="/iupc" className="text-navbar-link hover:border-b pb-1 px-1">
+            IUPC
+          </a>
+          <a href="/hackathon" className="text-navbar-link hover:border-b pb-1 px-1">
+            Hackathon
+          </a>
+          <a href="/dlsprint" className="text-navbar-link hover:border-b pb-1 px-1">
+            DL Sprint
+          </a>
+          <a href="/codebattle" className="text-navbar-link hover:border-b pb-1 px-1">
+            Code Battle
+          </a>
+          <a href="/" className="text-navbar-link hover:border-b pb-1 px-1">
+            Contact us
+          </a>
         </div>
 
         {/* Register Button */}
-        <button className="bg-navbar-button text-navbar-link px-4 py-2 rounded-md hover:bg-navbar-button-hover">
+
+        <button className="bg-navbar-button text-navbar-link px-4 py-2 rounded-md hover:bg-navbar-button-hover shadow-md">
           Register
         </button>
       </div>
     </nav>
   );
 };
-
-const NavLink = ({ label }) => {
-  return (
-    <a href="#" className="text-navbar-link border-2 border-transparent hover:border-b-2 hover:border-b-white pb-1 px-1 transition duration-300">
-      {label}
-    </a>
-  );
-};
-
-const navLinks = [
-  { label: 'Home' },
-  { label: 'IUPC' },
-  { label: 'Hackathon' },
-  { label: 'Contact us' },
-];
 
 export default Navbar;
