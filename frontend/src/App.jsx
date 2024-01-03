@@ -17,13 +17,15 @@ const App = () => {
     <main className="bg-body">
        <Navbar/>
        <Banner/>
-      <Routes>
-        <Route path="/" element={<Home/>}></Route>
-        <Route path="/iupc" element={<IUPC/>}></Route>
-        <Route path="/hackathon" element={<Hackathon/>}></Route>
-        <Route path="/dlsprint" element={<DLSprint/>}></Route>
-        <Route path="/codebattle" element={<CodeBattle/>}></Route>
-      </Routes>
+       <section className=" px-28">
+        <Routes>
+          <Route path="/" element={<Home/>}></Route>
+          <Route path="/iupc" element={<IUPC/>}></Route>
+          <Route path="/hackathon" element={<Hackathon/>}></Route>
+          <Route path="/dlsprint" element={<DLSprint/>}></Route>
+          <Route path="/codebattle" element={<CodeBattle/>}></Route>
+        </Routes>
+       </section>
       <SponsoredBy/>
       <Footer/>
 

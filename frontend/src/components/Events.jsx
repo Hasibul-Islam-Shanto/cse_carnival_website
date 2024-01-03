@@ -36,7 +36,7 @@ const Events = () => {
     ]
 
     return (
-        <div className="container mx-auto px-20 pb-8 pt-4">
+        <div className="container mx-auto pb-8 pt-4">
             <h2 className="text-3xl font-bold text-center mb-6 text-title">Events</h2>
             {events.map((event) => (
                 <EventItem key={event.name} event={event} />

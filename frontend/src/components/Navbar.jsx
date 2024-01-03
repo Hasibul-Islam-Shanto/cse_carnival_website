@@ -16,7 +16,7 @@ const Navbar = () => {
             className="h-20"
           />
         </div>
-
+      {/* TODO underline current page */}
         {/* Navigation Links */}
         <div className="flex-grow flex flex-row md:justify-between mr-8 px-20">
           <a href="/" className="text-navbar-link hover:border-b pb-1 px-1">
