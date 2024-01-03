@@ -1,6 +1,7 @@
 // Navbar.js
 
 import React from 'react';
+import { PrimaryButton } from './Button';
 
 
 const Navbar = () => {
@@ -39,10 +40,10 @@ const Navbar = () => {
         </div>
 
         {/* Register Button */}
-
-        <button className="bg-navbar-button text-navbar-link px-4 py-2 rounded-md hover:bg-navbar-button-hover shadow-md">
+        <PrimaryButton text="Register" />
+        {/* <button className="bg-navbar-button text-navbar-link px-4 py-2 rounded-md hover:bg-navbar-button-hover shadow-md">
           Register
-        </button>
+        </button> */}
       </div>
     </nav>
   );

@@ -1,8 +1,7 @@
 //App.jsx
 
 import Navbar from "./components/Navbar";
-import Events from "./components/Events";
-import AboutUs from "./components/AboutUs";
+import Banner from "./components/Banner";
 import SponsoredBy from "./components/SponsoredBy";
 import Footer from "./components/Footer";
 
@@ -15,13 +14,20 @@ import CodeBattle from "./pages/CodeBattle";
 
 const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Home/>}></Route>
-      <Route path="/iupc" element={<IUPC/>}></Route>
-      <Route path="/hackathon" element={<Hackathon/>}></Route>
-      <Route path="/dlsprint" element={<DLSprint/>}></Route>
-      <Route path="/codebattle" element={<CodeBattle/>}></Route>
-    </Routes>
+    <main className="bg-body">
+       <Navbar/>
+       <Banner/>
+      <Routes>
+        <Route path="/" element={<Home/>}></Route>
+        <Route path="/iupc" element={<IUPC/>}></Route>
+        <Route path="/hackathon" element={<Hackathon/>}></Route>
+        <Route path="/dlsprint" element={<DLSprint/>}></Route>
+        <Route path="/codebattle" element={<CodeBattle/>}></Route>
+      </Routes>
+      <SponsoredBy/>
+      <Footer/>
+
+     </main>
   );
 };
 
