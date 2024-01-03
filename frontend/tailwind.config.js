@@ -26,8 +26,8 @@ export default {
         'tab-header': '#F6EAD8'
       },
       backgroundImage: {
-        'navbar-texture': "url('/Navbar Background Image.png')",
-        'footer-texture': "url('/Footer Background Image.png')",
+        'navbar-texture': "url('/image/background/Navbar Background Image.png')",
+        'footer-texture': "url('/image/background/Footer Background Image.png')",
       }
     },
   },

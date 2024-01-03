@@ -1,6 +1,10 @@
 import React from 'react';
 import Tab from '../components/Tab';
 import { PrimaryButton } from '../components/Button';
+import Banner from '../components/Banner';
+import { SponsorList } from '../components/EventItem';
+import SponsoredBy from '../components/SponsoredBy';
+import { CodeBattleSponsor } from '../data/data';
 
 const CodeBattle = () => {
   const description = (
@@ -54,11 +58,13 @@ const CodeBattle = () => {
   )
   return (
     <div className=' text-navbar'>
-      <h2 className=" text-4xl font-extrabold md:mb-2 py-4 pt-10  text-navbar">CodeBattle</h2>
+      <Banner link="/image/banner/bannerCodeBattle.jpg" />
+      <h2 className=" text-4xl font-extrabold md:mb-2 py-4 pt-10  text-navbar">Code Battle</h2>
       <Tab child1={description} child2={announcment} child3={download} />
       <div className='py-10 w-full flex justify-center'>
         <PrimaryButton text='Register' />
       </div>
+      <SponsoredBy list={"list"} sponsors={CodeBattleSponsor}/>
     </div>
   );
 };

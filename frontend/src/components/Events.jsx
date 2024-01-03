@@ -1,39 +1,10 @@
 // BodySection.js
 
 import React from 'react';
-import EventItem from './EventItem';
+import { EventItem } from './EventItem';
+import { events } from '../data/data';
 
 const Events = () => {
-    const events = [
-        {
-            name: "IUPC",
-            description: "Description for Event 1. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
-            image: "/Event 1.png",
-            registration: "/",
-            link: "/iupc",
-        },
-        {
-            name: "Hackathon",
-            description: "Description for Event 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            image: "/Event 2.png",
-            registration: "/",
-            link: "/hackathon",
-        },
-        {
-            name: "DL Sprint",
-            description: "Description for Event 3. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
-            image: "/Event 1.png",
-            registration: "/",
-            link: "/dlsprint",
-        },
-        {
-            name: "Code Battle",
-            description: "Description for Event 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            image: "/Event 2.png",
-            registration: "/",
-            link: "/codebattle",
-        }
-    ]
 
     return (
         <div className="container mx-auto pb-8 pt-4">

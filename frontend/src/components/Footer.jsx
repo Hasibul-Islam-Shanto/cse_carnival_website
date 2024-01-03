@@ -8,11 +8,12 @@ const Footer = () => {
             <div className="container mx-auto flex justify-center items-center space-x-32">
                 {/* First Section: Logo */}
                 <div className="mr-8">
-                    <img src="/Carnival logo.png" alt="Footer Logo" className="h-48" />
+                    <img src="/image/logo/Carnival logo.png" alt="Footer Logo" className="h-48" />
                 </div>
 
                 {/* Second Section: Links */}
                 <div className="text-navbar-link text-sm">
+                    <p className="text-lg font-bold mb-4">Company</p>
                     <a href="#" className="block mb-2">News</a>
                     <a href="#" className="block mb-2">About Us</a>
                     <a href="#" className="block mb-2">Contact us</a>

@@ -1,12 +1,16 @@
 // Navbar.js
 
-import React from 'react';
+import React , { useEffect } from 'react';
 import { PrimaryButton } from './Button';
 import { Link, useLocation } from 'react-router-dom';
 
 
 const Navbar = () => {
   const location = useLocation();
+
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  }, [location]);
 
   return (
     <nav className="bg-navbar-texture bg-cover p-1 fixed w-full top-0 z-10">
@@ -15,7 +19,7 @@ const Navbar = () => {
         <div className="text-white font-bold text-lg md:mr-5">
           <Link to="/">
             <img
-              src={'/Carnival logo.png'}
+              src={'/image/logo/Carnival logo.png'}
               alt="Your Logo"
               className="h-20"
             />

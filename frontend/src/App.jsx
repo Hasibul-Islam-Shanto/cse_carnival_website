@@ -16,7 +16,7 @@ const App = () => {
   return (
     <main className="bg-body">
        <Navbar/>
-       <Banner/>
+       {/* <Banner/> */}
        <section className=" px-28">
         <Routes>
           <Route path="/" element={<Home/>}></Route>
@@ -26,7 +26,7 @@ const App = () => {
           <Route path="/codebattle" element={<CodeBattle/>}></Route>
         </Routes>
        </section>
-      <SponsoredBy/>
+      {/* <SponsoredBy/> */}
       <Footer/>
 
      </main>

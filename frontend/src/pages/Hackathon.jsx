@@ -1,6 +1,9 @@
 import React from 'react';
 import Tab from '../components/Tab';
 import { PrimaryButton } from '../components/Button';
+import Banner from '../components/Banner';
+import SponsoredBy from '../components/SponsoredBy';
+import { HackathonSponsor } from '../data/data';
 
 const Hackathon = () => {
   const description = (
@@ -54,11 +57,13 @@ const Hackathon = () => {
   )
   return (
     <div className=' text-navbar'>
+      <Banner link="/image/banner/bannerHackathon.jpg"/>
       <h2 className=" text-4xl font-extrabold md:mb-2 py-4 pt-10  text-navbar">Hackathon</h2>
       <Tab child1={description} child2={announcment} child3={download} />
       <div className='py-10 w-full flex justify-center'>
         <PrimaryButton text='Register' />
       </div>
+      <SponsoredBy list={"list"} sponsors={HackathonSponsor} />
     </div>
   );
 };
