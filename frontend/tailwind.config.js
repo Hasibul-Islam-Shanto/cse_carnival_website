@@ -25,6 +25,10 @@ export default {
         'navbar-link':"#F0E0C6",
         'tab-header': '#F6EAD8'
       },
+      backgroundImage: {
+        'navbar-texture': "url('/Navbar Background Image.png')",
+        'footer-texture': "url('/Footer Background Image.png')",
+      }
     },
   },
   plugins: [],

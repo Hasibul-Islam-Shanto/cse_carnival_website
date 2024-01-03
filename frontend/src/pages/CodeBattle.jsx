@@ -54,6 +54,7 @@ const CodeBattle = () => {
   )
   return (
     <div className=' text-navbar'>
+      <h2 className=" text-4xl font-extrabold md:mb-2 py-4 pt-10  text-navbar">CodeBattle</h2>
       <Tab child1={description} child2={announcment} child3={download} />
       <div className='py-10 w-full flex justify-center'>
         <PrimaryButton text='Register' />

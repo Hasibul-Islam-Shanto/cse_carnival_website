@@ -4,7 +4,7 @@ const Banner = () => {
     return (
         <div className="container mx-auto mt-20 px-20 pt-8 ">
             <div className="flex justify-center h-80">
-                <img src="/banner.jpg" alt="banner" className="" />
+                <img src="/banner.png" alt="banner" className="" />
             </div>
         </div>
     );

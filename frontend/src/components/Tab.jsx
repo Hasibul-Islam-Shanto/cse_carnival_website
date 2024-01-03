@@ -10,7 +10,7 @@ const Tab = ({ child1, child2, child3 }) => {
 
     return (
         <div className=' w-full border rounded-lg border-navbar-link'>
-            <div className="tab-header p-1 bg-tab-header">
+            <div className="tab-header p-1 bg-tab-header flex gap-2">
                 <button
                     className={activeTab === 0 ? 'bg-navbar text-white px-4 py-1 rounded-md' : 'bg-body text-navbar px-4 py-1 rounded-md'}
                     onClick={() => handleTabClick(0)}
@@ -30,7 +30,7 @@ const Tab = ({ child1, child2, child3 }) => {
                     Download Rulebook
                 </button>
             </div>
-            <div className="tab-content">
+            <div className="tab-content px-4 py-10">
                 {activeTab === 0 && child1}
                 {activeTab === 1 && child2}
                 {activeTab === 2 && child3}

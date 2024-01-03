@@ -4,11 +4,11 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className="bg-navbar py-8">
+        <footer className="bg-footer-texture bg-cover py-8">
             <div className="container mx-auto flex justify-center items-center space-x-32">
                 {/* First Section: Logo */}
                 <div className="mr-8">
-                    <img src="/logo 1.png" alt="Footer Logo" className="h-32" />
+                    <img src="/Carnival logo.png" alt="Footer Logo" className="h-48" />
                 </div>
 
                 {/* Second Section: Links */}

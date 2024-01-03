@@ -5,7 +5,7 @@ import { PrimaryButton } from '../components/Button';
 
 const IUPC = () => {
   const description = (
-    <div className='flex flex-col px-4 py-10 gap-10'>
+    <div className='flex flex-col gap-10'>
       <div>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic vero excepturi natus eum illum molestias ipsum delectus similique laudantium quas! Minus commodi maxime numquam nostrum sit sed velit atque nihil.
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias at eveniet commodi excepturi voluptas, cum officiis aliquam hic suscipit saepe itaque in nesciunt laboriosam dignissimos odit quos quaerat consequatur necessitatibus.
@@ -55,6 +55,7 @@ const IUPC = () => {
   )
   return (
     <div className=' text-navbar'>
+      <h2 className=" text-4xl font-extrabold md:mb-2 py-4 pt-10  text-navbar">Inter University Programming Contest</h2>
       <Tab child1={description} child2={announcment} child3={download} />
       <div className='py-10 w-full flex justify-center'>
         <PrimaryButton text='Register' />
