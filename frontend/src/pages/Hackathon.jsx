@@ -56,7 +56,7 @@ const Hackathon = () => {
     </div>
   )
   return (
-    <div className=' text-navbar'>
+    <div className=' text-navbar px-28'>
       <Banner link="/image/banner/bannerHackathon.jpg"/>
       <h2 className=" text-4xl font-extrabold md:mb-2 py-4 pt-10  text-navbar">Hackathon</h2>
       <Tab child1={description} child2={announcment} child3={download} />

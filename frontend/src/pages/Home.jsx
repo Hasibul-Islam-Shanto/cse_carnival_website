@@ -6,14 +6,24 @@ import AboutUs from '../components/AboutUs';
 import Banner from '../components/Banner';
 import SponsoredBy from '../components/SponsoredBy';
 import { sponsors } from '../data/data';
+import { HomeLeft, HomeLeft2, HomeRight, HomeRight2 } from '../data/vector';
 
 const Home = () => {
   return (
-    <div>
-        <Banner link="/image/banner/bannerHome.png"/>
-        <Events/>
-        <AboutUs/>
-        <SponsoredBy sponsors={sponsors}/>
+    <div className='px-28'>
+      <div>
+        <HomeLeft />
+        <HomeLeft2 />
+        <HomeRight />
+        <HomeRight2 />
+
+      </div>
+      <div className='z-1'>
+        <Banner link="/image/banner/bannerHome.png" />
+        <Events />
+        <AboutUs />
+        <SponsoredBy sponsors={sponsors} />
+      </div>
     </div>
   );
 };

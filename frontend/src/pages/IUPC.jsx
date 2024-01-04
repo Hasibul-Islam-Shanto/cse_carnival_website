@@ -58,7 +58,7 @@ const IUPC = () => {
   )
   return (
 
-    <div className=' text-navbar'>
+    <div className=' text-navbar px-28'>
       <Banner link="/image/banner/bannerIUPC.png" />
       <h2 className=" text-4xl font-extrabold md:mb-2 py-4 pt-10  text-navbar">Inter University Programming Contest</h2>
       <Tab child1={description} child2={announcment} child3={download} />

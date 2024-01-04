@@ -28,7 +28,10 @@ export default {
       backgroundImage: {
         'navbar-texture': "url('/image/background/Navbar Background Image.png')",
         'footer-texture': "url('/image/background/Footer Background Image.png')",
-      }
+        'vector-home-left': "url('/image/background/HomeLeft.png')",
+        
+      },
+      
     },
   },
   plugins: [],
