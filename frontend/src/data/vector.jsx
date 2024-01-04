@@ -4,7 +4,7 @@ export const HomeLeft = () => {
         <img
             src="/image/background/HomeLeft.svg"
             alt="Vector Art 1"
-            style={{ position: 'absolute', top: '20rem', left: '0rem' }}
+            style={{ position: 'absolute', top: '20rem', left: '0rem', transparency: '0.5' }}
         />
     );
 };
@@ -34,7 +34,7 @@ export const HomeRight2 = () => {
         <img
             src="/image/background/HomeRight2.png"
             alt="Vector Art 4"
-            style={{ position: 'absolute', top: '140rem', right: '0rem' }}
+            style={{ position: 'absolute', top: '135rem', right: '0rem', opacity: '1', zIndex: -1 }}
         />
     );
 };

@@ -13,7 +13,7 @@ const Navbar = () => {
   }, [location]);
 
   return (
-    <nav className="bg-navbar-texture bg-cover p-1 fixed w-full top-0 z-10">
+    <nav className="bg-navbar-texture bg-cover p-1 fixed w-full top-0 z-50">
       <div className="container mx-auto flex flex-col md:flex-row md:justify-between items-center px-20">
         {/* Logo */}
         <div className="text-white font-bold text-lg md:mr-5">

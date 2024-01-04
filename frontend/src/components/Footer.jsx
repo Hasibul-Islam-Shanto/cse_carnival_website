@@ -4,7 +4,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className="bg-footer-texture bg-cover py-8">
+        <footer className="bg-footer-texture bg-cover py-8 z-50 relative">
             <div className="container mx-auto flex justify-center items-center space-x-32">
                 {/* First Section: Logo */}
                 <div className="mr-8">

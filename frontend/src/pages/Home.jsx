@@ -10,15 +10,15 @@ import { HomeLeft, HomeLeft2, HomeRight, HomeRight2 } from '../data/vector';
 
 const Home = () => {
   return (
-    <div className='px-28'>
-      <div className=''>
+    <div className=''>
+      <div className='z-0 relative'>
         <HomeLeft />
         <HomeLeft2 />
         <HomeRight />
         <HomeRight2 />
 
       </div>
-      <div className=''>
+      <div className='z-10 relative px-28'>
         <Banner link="/image/banner/bannerHome.png" />
         <Events />
         <AboutUs />
