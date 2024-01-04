@@ -11,14 +11,14 @@ import { HomeLeft, HomeLeft2, HomeRight, HomeRight2 } from '../data/vector';
 const Home = () => {
   return (
     <div className='px-28'>
-      <div>
+      <div className=''>
         <HomeLeft />
         <HomeLeft2 />
         <HomeRight />
         <HomeRight2 />
 
       </div>
-      <div className='z-1'>
+      <div className=''>
         <Banner link="/image/banner/bannerHome.png" />
         <Events />
         <AboutUs />

@@ -4,6 +4,7 @@ import { PrimaryButton } from '../components/Button';
 import Banner from '../components/Banner';
 import SponsoredBy from '../components/SponsoredBy';
 import { HackathonSponsor } from '../data/data';
+import { HomeLeft } from '../data/vector';
 
 const Hackathon = () => {
   const description = (
@@ -57,8 +58,9 @@ const Hackathon = () => {
   )
   return (
     <div className=' text-navbar px-28'>
+      {/* <HomeLeft/> */}
       <Banner link="/image/banner/bannerHackathon.jpg"/>
-      <h2 className=" text-4xl font-extrabold md:mb-2 py-4 pt-10  text-navbar">Hackathon</h2>
+      <h2 className="text-4xl font-extrabold md:my-6 py-5 md:mx-56  text-navbar-button text-center bg-navbar-button bg-opacity-10 rounded-2xl border border-navbar-button border-opacity-30">Hackathon</h2>
       <Tab child1={description} child2={announcment} child3={download} />
       <div className='py-10 w-full flex justify-center'>
         <PrimaryButton text='Register' />

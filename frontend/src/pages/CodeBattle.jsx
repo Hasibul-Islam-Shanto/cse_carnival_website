@@ -59,7 +59,7 @@ const CodeBattle = () => {
   return (
     <div className=' text-navbar px-28'>
       <Banner link="/image/banner/bannerCodeBattle.jpg" />
-      <h2 className=" text-4xl font-extrabold md:mb-2 py-4 pt-10  text-navbar">Code Battle</h2>
+      <h2 className="text-4xl font-extrabold md:my-6 py-5 md:mx-64  text-navbar-button text-center bg-navbar-button bg-opacity-10 rounded-2xl border border-navbar-button border-opacity-30">Code Battle</h2>
       <Tab child1={description} child2={announcment} child3={download} />
       <div className='py-10 w-full flex justify-center'>
         <PrimaryButton text='Register' />

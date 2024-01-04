@@ -1,7 +1,8 @@
 export const HomeLeft = () => {
     return (
+        
         <img
-            src="/image/background/HomeLeft.png"
+            src="/image/background/HomeLeft.svg"
             alt="Vector Art 1"
             style={{ position: 'absolute', top: '20rem', left: '0rem' }}
         />

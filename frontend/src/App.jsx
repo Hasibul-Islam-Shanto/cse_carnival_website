@@ -14,7 +14,7 @@ import CodeBattle from "./pages/CodeBattle";
 
 const App = () => {
   return (
-    <main className="bg-body">
+    <main className="bg-body ">
 
       <Navbar />
       {/* <Banner/> */}
