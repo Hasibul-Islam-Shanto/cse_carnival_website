@@ -27,7 +27,7 @@ const Tab = ({ child1, child2, child3 }) => {
                     className={activeTab === 2 ? 'bg-navbar text-white px-4 py-1 rounded-md' : 'bg-body text-navbar px-4 py-1 rounded-md'}
                     onClick={() => handleTabClick(2)}
                 >
-                    Download Rulebook
+                    Rules For Event
                 </button>
             </div>
             <div className="tab-content px-4 py-10">

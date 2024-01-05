@@ -39,3 +39,22 @@ export const HomeRight2 = () => {
     );
 };
 
+export const DLSprintLeft = () => {
+    return (
+        <img
+            src="/image/background/DLSpringLeft.png"
+            alt="Vector Art 2"
+            style={{ position: 'absolute', top: '39rem', left: '-5rem' }}
+        />
+    );
+};
+
+export const DLSprintRight = () => {
+    return (
+        <img
+            src="/image/background/DLSpringRight.png"
+            alt="Vector Art 2"
+            style={{ position: 'absolute', top: '30.3rem', right: '-5.5rem' }}
+        />
+    );
+};
