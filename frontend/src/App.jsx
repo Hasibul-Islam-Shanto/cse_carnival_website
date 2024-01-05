@@ -11,6 +11,7 @@ import IUPC from "./pages/IUPC";
 import Hackathon from "./pages/Hackathon";
 import DLSprint from "./pages/DLSprint";
 import CodeBattle from "./pages/CodeBattle";
+import Organizer from "./components/Organizer";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
         </Routes>
       </section>
       {/* <SponsoredBy/> */}
+      <Organizer/>
       <Footer />
 
     </main>

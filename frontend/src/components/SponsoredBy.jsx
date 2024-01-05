@@ -1,11 +1,11 @@
 // SponsoredBy.js
 
 import React from 'react';
-import { SponsorItem, SponsorList } from './EventItem';
+import { SponsorItem, SponsorList } from './Items';
 import PropTypes from 'prop-types';
 // import { sponsors } from '../data/data';
 
-const SponsoredBy = ({list, sponsors}) => {
+const SponsoredBy = ({ list, sponsors }) => {
 
   return (
     <div>

@@ -23,7 +23,9 @@ export default {
         'navbar-button-hover' : '#D35C18',
         'body':'#FFFAF1',
         'navbar-link':"#F0E0C6",
-        'tab-header': '#F6EAD8'
+        'tab-header': '#F6EAD8',
+        'card-body' : '#DB7B1B12',
+        'organizer-body' : '#280847CC' 
       },
       backgroundImage: {
         'navbar-texture': "url('/image/background/Navbar Background Image.png')",

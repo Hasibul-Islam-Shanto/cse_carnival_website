@@ -7,6 +7,7 @@ import Banner from '../components/Banner';
 import SponsoredBy from '../components/SponsoredBy';
 import { sponsors } from '../data/data';
 import { HomeLeft, HomeLeft2, HomeRight, HomeRight2 } from '../data/vector';
+import Words from '../components/Words';
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
         <Banner link="/image/banner/bannerHome.png" />
         <Events />
         <AboutUs />
+        <Words />
         <SponsoredBy sponsors={sponsors} />
       </div>
     </div>

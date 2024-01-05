@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { PrimaryButton, SecondaryButton } from "./Button";
 import PropTypes from 'prop-types';
 
-const EventItem = ({ event }) => {
+const Items = ({ event }) => {
     return (
         <div className="flex odd:justify-between odd:flex-row-reverse items-center mb-8 gap-10 border border-navbar-button border-opacity-15 p-5 rounded-2xl backdrop-blur-lg">
             <div className="flex-shrink-0">
@@ -55,7 +55,7 @@ const SponsorList = ({ sponsor }) => {
     )
 }
 
-EventItem.propTypes = {
+Items.propTypes = {
     event: PropTypes.object.isRequired,
 };
 SponsorList.propTypes = {
@@ -66,4 +66,4 @@ SponsorItem.propTypes = {
     sponsor: PropTypes.object.isRequired,
 };
 
-export { EventItem, SponsorList, SponsorItem };
+export { Items, SponsorList, SponsorItem };

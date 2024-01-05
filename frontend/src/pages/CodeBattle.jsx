@@ -2,7 +2,7 @@ import React from 'react';
 import Tab from '../components/Tab';
 import { PrimaryButton } from '../components/Button';
 import Banner from '../components/Banner';
-import { SponsorList } from '../components/EventItem';
+import { SponsorList } from '../components/Items';
 import SponsoredBy from '../components/SponsoredBy';
 import { CodeBattleSponsor } from '../data/data';
 
@@ -25,11 +25,11 @@ const CodeBattle = () => {
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias at eveniet commodi excepturi voluptas, cum officiis aliquam hic suscipit saepe itaque in nesciunt laboriosam dignissimos odit quos quaerat consequatur necessitatibus.
       </div>
       <div>
-      <span className='font-semibold'>Team Requirements: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic vero excepturi natus eum illum molestias ipsum delectus similique laudantium quas! Minus commodi maxime numquam nostrum sit sed velit atque nihil.
+        <span className='font-semibold'>Team Requirements: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic vero excepturi natus eum illum molestias ipsum delectus similique laudantium quas! Minus commodi maxime numquam nostrum sit sed velit atque nihil.
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias at eveniet commodi excepturi voluptas, cum officiis aliquam hic suscipit saepe itaque in nesciunt laboriosam dignissimos odit quos quaerat consequatur necessitatibus.
       </div>
       <div>
-      <span className='font-semibold'>Registration Fee:: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic vero excepturi natus eum illum molestias ipsum delectus similique laudantium quas! Minus commodi maxime numquam nostrum sit sed velit atque nihil.
+        <span className='font-semibold'>Registration Fee:: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic vero excepturi natus eum illum molestias ipsum delectus similique laudantium quas! Minus commodi maxime numquam nostrum sit sed velit atque nihil.
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias at eveniet commodi excepturi voluptas, cum officiis aliquam hic suscipit saepe itaque in nesciunt laboriosam dignissimos odit quos quaerat consequatur necessitatibus.
       </div>
       <div className='font-bold'>Schedule:</div>
@@ -39,10 +39,10 @@ const CodeBattle = () => {
         <div>Prize Giving Ceremony:</div>
       </div>
       <div>
-        For any queries, contact: <br/>
+        For any queries, contact: <br />
         Hasibul Islam Shanto - mdhasibulislam895@gmail.com
       </div>
-        
+
 
     </div>
   );
@@ -64,7 +64,7 @@ const CodeBattle = () => {
       <div className='py-10 w-full flex justify-center'>
         <PrimaryButton text='Register' />
       </div>
-      <SponsoredBy list={"list"} sponsors={CodeBattleSponsor}/>
+      <SponsoredBy list={"list"} sponsors={CodeBattleSponsor} />
     </div>
   );
 };
