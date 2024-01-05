@@ -5,46 +5,22 @@ import { PrimaryButton } from '../components/Button';
 import Banner from '../components/Banner';
 import SponsoredBy from '../components/SponsoredBy';
 import { IUPCSponsor } from '../data/data';
+import { Details, QuickDetails } from '../components/Details';
+import { IUPCLongDescription, IUPCShortDescription } from '../data/eventDetails';
 
 const IUPC = () => {
   const description = (
-    <div className='flex flex-col gap-10'>
-      
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic vero excepturi natus eum illum molestias ipsum delectus similique laudantium quas! Minus commodi maxime numquam nostrum sit sed velit atque nihil.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias at eveniet commodi excepturi voluptas, cum officiis aliquam hic suscipit saepe itaque in nesciunt laboriosam dignissimos odit quos quaerat consequatur necessitatibus.
+    <div className='flex flex-col px-4 gap-10'>
+      <div className='flex flex-col gap-2 '>
+        <QuickDetails className="bg-amber-600 border-orange-600" description={IUPCShortDescription[0]}/>
+        <QuickDetails className="bg-slate-500 border-slate-500" description={IUPCShortDescription[1]}/>
+        <QuickDetails className="bg-amber-100 border-amber-100" description={IUPCShortDescription[2]}/>
+        <QuickDetails className="bg-amber-600 border-orange-600" description={IUPCShortDescription[3]}/>
+        <QuickDetails className="bg-amber-600 border-orange-600" description={IUPCShortDescription[4]}/>
       </div>
-      <div>
-        <div className='font-bold underline pb-4'>
-          Event Highlights
-        </div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic vero excepturi natus eum illum molestias ipsum delectus similique laudantium quas! Minus commodi maxime numquam nostrum sit sed velit atque nihil.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias at eveniet commodi excepturi voluptas, cum officiis aliquam hic suscipit saepe itaque in nesciunt laboriosam dignissimos odit quos quaerat consequatur necessitatibus.
-      </div>
-      <div>
-        <span className='font-semibold'>Duration: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic vero excepturi natus eum illum molestias ipsum delectus similique laudantium quas! Minus commodi maxime numquam nostrum sit sed velit atque nihil.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias at eveniet commodi excepturi voluptas, cum officiis aliquam hic suscipit saepe itaque in nesciunt laboriosam dignissimos odit quos quaerat consequatur necessitatibus.
-      </div>
-      <div>
-        <span className='font-semibold'>Team Requirements: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic vero excepturi natus eum illum molestias ipsum delectus similique laudantium quas! Minus commodi maxime numquam nostrum sit sed velit atque nihil.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias at eveniet commodi excepturi voluptas, cum officiis aliquam hic suscipit saepe itaque in nesciunt laboriosam dignissimos odit quos quaerat consequatur necessitatibus.
-      </div>
-      <div>
-        <span className='font-semibold'>Registration Fee:: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic vero excepturi natus eum illum molestias ipsum delectus similique laudantium quas! Minus commodi maxime numquam nostrum sit sed velit atque nihil.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias at eveniet commodi excepturi voluptas, cum officiis aliquam hic suscipit saepe itaque in nesciunt laboriosam dignissimos odit quos quaerat consequatur necessitatibus.
-      </div>
-      <div className='font-bold'>Schedule:</div>
-      <div className='font-semibold'>
-        <div>Registration Deadline:</div>
-        <div>Final Round:</div>
-        <div>Prize Giving Ceremony:</div>
-      </div>
-      <div>
-        For any queries, contact: <br />
-        Hasibul Islam Shanto - mdhasibulislam895@gmail.com
-      </div>
-
-
+      {IUPCLongDescription.map((item) => (
+        <Details key={item.title} description={item} />
+      ))}
     </div>
   );
   const announcment = (
