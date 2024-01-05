@@ -39,3 +39,13 @@ export const HomeRight2 = () => {
     );
 };
 
+export const IUPCRight= () => {
+    return (
+        <img
+            src="/image/background/IUPCRight.png"
+            alt="Vector Art 3"
+            style={{ position: 'absolute', top: '45rem', right: '0rem' }}
+        />
+    );
+};
+
