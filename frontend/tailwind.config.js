@@ -37,6 +37,7 @@ export default {
         'codebattle-border' : '',
         'aboutus-body' : '#F0E0C647',
         'aboutus-border' : '#F0E0C6',
+        'event-details-border' : '#FFFAF1',
         
       },
       backgroundImage: {
