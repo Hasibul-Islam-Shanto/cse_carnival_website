@@ -122,7 +122,7 @@ export const events = {
               value: "Kaggle"
             },
             {
-              title: "Registration Fee: Free",
+              title: "Registration Fee",
               value: "Free"
             },
             {
