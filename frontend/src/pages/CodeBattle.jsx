@@ -5,6 +5,7 @@ import Banner from '../components/Banner';
 import SponsoredBy from '../components/SponsoredBy';
 import { events } from '../data/data';
 import { Details, QuickDetails } from '../components/Details';
+import { DLSprintLeft, DLSprintRight } from '../data/vector';
 
 const CodeBattle = () => {
   const description = (
@@ -32,14 +33,20 @@ const CodeBattle = () => {
     </div>
   )
   return (
-    <div className=' text-navbar px-28'>
-      <Banner link="/image/banner/bannerCodeBattle.jpg" />
-      <h2 className="text-4xl font-bold md:my-6 py-5 md:mx-64  text-navbar-button text-center bg-navbar-button bg-opacity-10 rounded-2xl border border-navbar-button border-opacity-30">Code Battle</h2>
-      <Tab child1={description} child2={announcment} child3={download} />
-      <div className='py-10 w-full flex justify-center'>
-        <PrimaryButton text='Register' />
+    <div className=''>
+      <div className='z-0 relative'>
+        <DLSprintLeft />
+        <DLSprintRight />
       </div>
-      <SponsoredBy list={"list"} sponsors={events['codebattle'].sponsors} />
+      <div className='text-navbar z-10 relative px-28'>
+        <Banner link="/image/banner/bannerCodeBattle.jpg" />
+        <h2 className="text-4xl font-bold md:my-6 py-5 md:mx-64  text-navbar-button text-center bg-navbar-button bg-opacity-10 rounded-2xl border border-navbar-button border-opacity-30">Code Battle</h2>
+        <Tab child1={description} child2={announcment} child3={download} />
+        <div className='py-10 w-full flex justify-center'>
+          <PrimaryButton text='Register' />
+        </div>
+        <SponsoredBy list={"list"} sponsors={events['codebattle'].sponsors} />
+      </div>
     </div>
   );
 };
