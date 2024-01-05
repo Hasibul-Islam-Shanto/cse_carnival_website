@@ -13,6 +13,6 @@ const Banner = ({link}) => {
 
 export default Banner;
 
-Banner.PropTypes = {
+Banner.propTypes = {
     link : PropTypes.string.isRequired,
 };

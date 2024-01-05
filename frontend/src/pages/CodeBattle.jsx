@@ -2,23 +2,21 @@ import React from 'react';
 import Tab from '../components/Tab';
 import { PrimaryButton } from '../components/Button';
 import Banner from '../components/Banner';
-import { SponsorList } from '../components/Items';
 import SponsoredBy from '../components/SponsoredBy';
-import { CodeBattleSponsor } from '../data/data';
+import { events } from '../data/data';
 import { Details, QuickDetails } from '../components/Details';
-import { codeBattleLongDescription, codeBattleShortDescription } from '../data/eventDetails';
 
 const CodeBattle = () => {
   const description = (
     <div className='flex flex-col px-4 gap-10'>
       <div className='flex flex-col gap-2 '>
-        <QuickDetails className="bg-amber-600 border-orange-600" description={codeBattleShortDescription[0]}/>
-        <QuickDetails className="bg-slate-500 border-slate-500" description={codeBattleShortDescription[1]}/>
-        <QuickDetails className="bg-amber-100 border-amber-100" description={codeBattleShortDescription[2]}/>
-        <QuickDetails className="bg-amber-600 border-orange-600" description={codeBattleShortDescription[3]}/>
-        <QuickDetails className="bg-amber-600 border-orange-600" description={codeBattleShortDescription[4]}/>
+        <QuickDetails className="bg-amber-600 border-orange-600" description={events['codebattle'].shortDescription[0]}/>
+        <QuickDetails className="bg-slate-500 border-slate-500" description={events['codebattle'].shortDescription[1]}/>
+        <QuickDetails className="bg-amber-100 border-amber-100" description={events['codebattle'].shortDescription[2]}/>
+        <QuickDetails className="bg-amber-600 border-orange-600" description={events['codebattle'].shortDescription[3]}/>
+        <QuickDetails className="bg-amber-600 border-orange-600" description={events['codebattle'].shortDescription[4]}/>
       </div>
-      {codeBattleLongDescription.map((item) => (
+      {events['codebattle'].longDescription.map((item) => (
         <Details key={item.title} description={item} />
       ))}
     </div>
@@ -41,7 +39,7 @@ const CodeBattle = () => {
       <div className='py-10 w-full flex justify-center'>
         <PrimaryButton text='Register' />
       </div>
-      <SponsoredBy list={"list"} sponsors={CodeBattleSponsor} />
+      <SponsoredBy list={"list"} sponsors={events['codebattle'].sponsors} />
     </div>
   );
 };

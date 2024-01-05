@@ -1,5 +1,5 @@
-export const events = [
-    {
+export const events = {
+    "iupc": {
         name: "IUPC",
         description: "Description for Event 1. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
         registrationDate: "TBA",
@@ -44,8 +44,15 @@ export const events = [
         ],
         bg: "bg-iupc-body",
         border: "border-iupc-border",
+        sponsors: [
+            {
+                name: "Re:cruit",
+                description: "Description for Event 1. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
+                image: "/image/sponsor/Recruit.png",
+            }
+        ]
     },
-    {
+    "hackathon": {
         name: "Hackathon",
         description: "Description for Event 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         registrationDate: "TBA",
@@ -58,8 +65,47 @@ export const events = [
         details: "",
         bg: "bg-hackathon-body",
         border: "border-hackathon-border",
+        shortDescription: [
+            {
+              title: "Platform",
+              value: "CodingGame"
+            },
+            {
+              title: "Registration Date",
+              value: "15 January - 1 February"
+            },
+            {
+              title: "Running Time",
+              value: "2 - 16 February"
+            },
+            {
+              title: "Registration Fee",
+              value: "Free"
+            },
+            {
+              title: "Prize",
+              value: "TBA"
+            },
+        ],
+        longDescription: [
+            {
+              title: "Resource Needed",
+              value: "1. Banner <br/> 2. Announcement Template"
+            },
+            {
+              title: "Details",
+              value: "Do you love gaming? Do you also love coding?<br/><br/>We have news for you.<br/><br/>We will present to you a gaming environment where the power to control lies not in a mere controller but in the elegance of your code. Your digital warriors, crafted with the brilliance of your programming finesse in your favourite programming language, will engage in a fierce showdown against the bots of your adversaries. It's not just a game; it's an epic battle of tactics, a symphony of skill where your code reigns supreme."
+            }
+        ],
+        sponsors: [
+            {
+                name: "Dynamic Solution Innovators",
+                description: "Description for Event 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                image: "/image/sponsor/DSI.png",
+            }
+        ]
     },
-    {
+    "dlsprint": {
         name: "DL Sprint",
         description: "Description for Event 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         registrationDate: "TBA",
@@ -108,8 +154,15 @@ export const events = [
         ],
         bg: "bg-dlsprint-body",
         border: "border-dlsprint-border",
+        sponsors: [
+            {
+                name: "Re:cruit",
+                description: "Description for Event 1. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
+                image: "/image/sponsor/Recruit.png",
+            }
+        ]
     },
-    {
+    "codebattle": {
         name: "Code Battle",
         description: "Where Gaming Meets Coding, and Victory is Written in Code!",
         registrationDate: "15 January - 1 February",
@@ -122,8 +175,47 @@ export const events = [
         details: "Do you love gaming? \n \n Do you also love coding? \n \n We have news for you. We will present to you a gaming environment where the power to control lies not in a mere controller but in the elegance of your code. Your digital warriors, crafted with the brilliance of your programming finesse in your favourite programming language, will engage in a fierce showdown against the bots of your adversaries. It's not just a game; it's an epic battle of tactics, a symphony of skill where your code reigns supreme.",
         bg: "bg-codebattle-body",
         border: "border-codebattle-border",
+        shortDescription: [
+            {
+              title: "Platform",
+              value: "CodingGame"
+            },
+            {
+              title: "Registration Date",
+              value: "15 January - 1 February"
+            },
+            {
+              title: "Running Time",
+              value: "2 - 16 February"
+            },
+            {
+              title: "Registration Fee",
+              value: "Free"
+            },
+            {
+              title: "Prize",
+              value: "TBA"
+            },
+        ],
+        longDescription: [
+            {
+              title: "Resource Needed",
+              value: "1. Banner <br/> 2. Announcement Template"
+            },
+            {
+              title: "Details",
+              value: "Do you love gaming? Do you also love coding?<br/><br/>We have news for you.<br/><br/>We will present to you a gaming environment where the power to control lies not in a mere controller but in the elegance of your code. Your digital warriors, crafted with the brilliance of your programming finesse in your favourite programming language, will engage in a fierce showdown against the bots of your adversaries. It's not just a game; it's an epic battle of tactics, a symphony of skill where your code reigns supreme."
+            }
+        ],
+        sponsors: [
+            {
+                name: "Dynamic Solution Innovators",
+                description: "Description for Event 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                image: "/image/sponsor/DSI.png",
+            }
+        ]  
     }
-];
+}
 
 export const sponsors = [
     {
@@ -131,38 +223,6 @@ export const sponsors = [
         description: "Description for Event 1. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
         image: "/image/sponsor/Recruit.png",
     },
-    {
-        name: "Dynamic Solution Innovators",
-        description: "Description for Event 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        image: "/image/sponsor/DSI.png",
-    }
-]
-
-export const IUPCSponsor = [
-    {
-        name: "Re:cruit",
-        description: "Description for Event 1. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
-        image: "/image/sponsor/Recruit.png",
-    }
-]
-
-export const HackathonSponsor = [
-    {
-        name: "Dynamic Solution Innovators",
-        description: "Description for Event 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        image: "/image/sponsor/DSI.png",
-    }
-]
-
-export const DLSprintSponsor = [
-    {
-        name: "Re:cruit",
-        description: "Description for Event 1. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
-        image: "/image/sponsor/Recruit.png",
-    }
-]
-
-export const CodeBattleSponsor = [
     {
         name: "Dynamic Solution Innovators",
         description: "Description for Event 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",

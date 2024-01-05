@@ -3,22 +3,20 @@ import Tab from '../components/Tab';
 import { PrimaryButton } from '../components/Button';
 import Banner from '../components/Banner';
 import SponsoredBy from '../components/SponsoredBy';
-import { HackathonSponsor } from '../data/data';
-import { HomeLeft } from '../data/vector';
+import { events } from '../data/data';
 import { Details, QuickDetails } from '../components/Details';
-import { hackathonLongDescription, hackathonShortDescription } from '../data/eventDetails';
 
 const Hackathon = () => {
   const description = (
     <div className='flex flex-col px-4 gap-10'>
       <div className='flex flex-col gap-2 '>
-        <QuickDetails className="bg-amber-600 border-orange-600" description={hackathonShortDescription[0]}/>
-        <QuickDetails className="bg-slate-500 border-slate-500" description={hackathonShortDescription[1]}/>
-        <QuickDetails className="bg-amber-100 border-amber-100" description={hackathonShortDescription[2]}/>
-        <QuickDetails className="bg-amber-600 border-orange-600" description={hackathonShortDescription[3]}/>
-        <QuickDetails className="bg-amber-600 border-orange-600" description={hackathonShortDescription[4]}/>
+        <QuickDetails className="bg-amber-600 border-orange-600" description={events['hackathon'].shortDescription[0]}/>
+        <QuickDetails className="bg-slate-500 border-slate-500" description={events['hackathon'].shortDescription[1]}/>
+        <QuickDetails className="bg-amber-100 border-amber-100" description={events['hackathon'].shortDescription[2]}/>
+        <QuickDetails className="bg-amber-600 border-orange-600" description={events['hackathon'].shortDescription[3]}/>
+        <QuickDetails className="bg-amber-600 border-orange-600" description={events['hackathon'].shortDescription[4]}/>
       </div>
-      {hackathonLongDescription.map((item) => (
+      {events['hackathon'].longDescription.map((item) => (
         <Details key={item.title} description={item} />
       ))}
     </div>
@@ -42,7 +40,7 @@ const Hackathon = () => {
       <div className='py-10 w-full flex justify-center'>
         <PrimaryButton text='Register' />
       </div>
-      <SponsoredBy list={"list"} sponsors={HackathonSponsor} />
+      <SponsoredBy list={"list"} sponsors={events['hackathon'].sponsors} />
     </div>
   );
 };

@@ -25,7 +25,6 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        {/* TODO underline current page */}
         {/* Navigation Links */}
           <Link to="/">
             <div className={`text-navbar-link hover:border-b pb-1 px-1 ${

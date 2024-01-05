@@ -3,22 +3,21 @@ import Tab from '../components/Tab';
 import { PrimaryButton } from '../components/Button';
 import Banner from '../components/Banner';
 import SponsoredBy from '../components/SponsoredBy';
-import { DLSprintSponsor } from '../data/data';
+import { events } from '../data/data';
 import { DLSprintLeft, DLSprintRight } from '../data/vector';
 import { Details, QuickDetails } from '../components/Details';
-import { dlSpringLongDescription, dlSpringShortDescription } from '../data/eventDetails';
 
 const DLSprint = () => {
   const description = (
     <div className='flex flex-col px-4 gap-10'>
       <div className='flex flex-col gap-2 '>
-        <QuickDetails className="bg-amber-600 border-orange-600" description={dlSpringShortDescription[0]}/>
-        <QuickDetails className="bg-slate-500 border-slate-500" description={dlSpringShortDescription[1]}/>
-        <QuickDetails className="bg-amber-100 border-amber-100" description={dlSpringShortDescription[2]}/>
-        <QuickDetails className="bg-amber-600 border-orange-600" description={dlSpringShortDescription[3]}/>
-        <QuickDetails className="bg-amber-600 border-orange-600" description={dlSpringShortDescription[4]}/>
+        <QuickDetails className="bg-amber-600 border-orange-600" description={events['dlsprint'].shortDescription[0]}/>
+        <QuickDetails className="bg-slate-500 border-slate-500" description={events['dlsprint'].shortDescription[1]}/>
+        <QuickDetails className="bg-amber-100 border-amber-100" description={events['dlsprint'].shortDescription[2]}/>
+        <QuickDetails className="bg-amber-600 border-orange-600" description={events['dlsprint'].shortDescription[3]}/>
+        <QuickDetails className="bg-amber-600 border-orange-600" description={events['dlsprint'].shortDescription[4]}/>
       </div>
-      {dlSpringLongDescription.map((item) => (
+      {events['dlsprint'].longDescription.map((item) => (
         <Details key={item.title} description={item} />
       ))}      
     </div>
@@ -46,7 +45,7 @@ const DLSprint = () => {
         <div className='py-10 w-full flex justify-center'>
           <PrimaryButton text='Register' />
         </div>
-        <SponsoredBy list={"list"} sponsors={DLSprintSponsor}/>
+        <SponsoredBy list={"list"} sponsors={events['dlsprint'].sponsors}/>
       </div>
     </div>
   );
