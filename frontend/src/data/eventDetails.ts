@@ -5,7 +5,7 @@ export const dlSpringShortDescription = [
       value: "Kaggle"
     },
     {
-      title: "Registration Fee: Free",
+      title: "Registration Fee",
       value: "Free"
     },
     {
@@ -32,7 +32,7 @@ export const dlSpringLongDescription = [
     },
     {
       title: "🏆 Prizes:",
-      value: "Compete for incredible prizes, including cash rewards, Kaggle competition medals, and the chance to be recognized as a pioneer in the field of autonomous vehicle object detection.<br/><br/><br/>📅 Important Dates:"
+      value: "Compete for incredible prizes, including cash rewards, Kaggle competition medals, and the chance to be recognized as a pioneer in the field of autonomous vehicle object detection."
     }
 ];
 
@@ -50,7 +50,7 @@ export const codeBattleShortDescription = [
       value: "2 - 16 February"
     },
     {
-      title: "Registration Fee: Free",
+      title: "Registration Fee",
       value: "Free"
     },
     {
@@ -84,7 +84,7 @@ export const hackathonShortDescription = [
       value: "2 - 16 February"
     },
     {
-      title: "Registration Fee: Free",
+      title: "Registration Fee",
       value: "Free"
     },
     {

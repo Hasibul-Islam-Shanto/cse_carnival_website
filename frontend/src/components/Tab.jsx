@@ -9,7 +9,7 @@ const Tab = ({ child1, child2, child3 }) => {
     };
 
     return (
-        <div className=' w-full border rounded-lg border-navbar-link'>
+        <div className=' w-full border rounded-lg border-event-details-border overflow-hidden'>
             <div className="tab-header p-1 bg-tab-header flex gap-2">
                 <button
                     className={activeTab === 0 ? 'bg-navbar text-white px-4 py-1 rounded-md' : 'bg-body text-navbar px-4 py-1 rounded-md'}
@@ -30,7 +30,7 @@ const Tab = ({ child1, child2, child3 }) => {
                     Rules For Event
                 </button>
             </div>
-            <div className="tab-content px-4 py-10">
+            <div className="tab-content px-4 py-5">
                 {activeTab === 0 && child1}
                 {activeTab === 1 && child2}
                 {activeTab === 2 && child3}

@@ -41,7 +41,9 @@ export const events = [
               title: "Details",
               value: "Do you love gaming? Do you also love coding?<br/><br/>We have news for you.<br/><br/>We will present to you a gaming environment where the power to control lies not in a mere controller but in the elegance of your code. Your digital warriors, crafted with the brilliance of your programming finesse in your favourite programming language, will engage in a fierce showdown against the bots of your adversaries. It's not just a game; it's an epic battle of tactics, a symphony of skill where your code reigns supreme."
             }
-        ]
+        ],
+        bg: "bg-iupc-body",
+        border: "border-iupc-border",
     },
     {
         name: "Hackathon",
@@ -54,6 +56,8 @@ export const events = [
         registration: "/",
         link: "/hackathon",
         details: "",
+        bg: "bg-hackathon-body",
+        border: "border-hackathon-border",
     },
     {
         name: "DL Sprint",
@@ -101,7 +105,9 @@ export const events = [
               title: "🏆 Prizes:",
               value: "Compete for incredible prizes, including cash rewards, Kaggle competition medals, and the chance to be recognized as a pioneer in the field of autonomous vehicle object detection.<br/><br/><br/>📅 Important Dates:"
             }
-        ]
+        ],
+        bg: "bg-dlsprint-body",
+        border: "border-dlsprint-border",
     },
     {
         name: "Code Battle",
@@ -114,6 +120,8 @@ export const events = [
         registration: "/",
         link: "/codebattle",
         details: "Do you love gaming? \n \n Do you also love coding? \n \n We have news for you. We will present to you a gaming environment where the power to control lies not in a mere controller but in the elegance of your code. Your digital warriors, crafted with the brilliance of your programming finesse in your favourite programming language, will engage in a fierce showdown against the bots of your adversaries. It's not just a game; it's an epic battle of tactics, a symphony of skill where your code reigns supreme.",
+        bg: "bg-codebattle-body",
+        border: "border-codebattle-border",
     }
 ];
 

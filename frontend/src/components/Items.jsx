@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { PrimaryButton, SecondaryButton } from "./Button";
 import PropTypes from 'prop-types';
 
-const Items = ({ event }) => {
+const EventItems = ({ event }) => {
     return (
-        <div className="flex odd:justify-between odd:flex-row-reverse items-center mb-8 gap-10 border border-navbar-button border-opacity-15 p-5 rounded-2xl backdrop-blur-lg">
+        <div className={`flex ${event.bg} ${event.border} odd:justify-between odd:flex-row-reverse items-center mb-8 gap-10 border p-5 rounded-2xl`}>
             <div className="flex-shrink-0">
                 <img src={event.image} alt="Event 1" className="" />
             </div>
@@ -35,7 +35,7 @@ const Items = ({ event }) => {
 
 const SponsorItem = ({ sponsor }) => {
     return (
-        <div className="flex odd:justify-between odd:flex-row-reverse items-center mb-8 gap-10">
+        <div className={`flex odd:justify-between odd:flex-row-reverse items-center mb-8 gap-10 bg-sponsor-body p-4 rounded-2xl`}>
             <div className="flex-shrink-0">
                 <img src={sponsor.image} alt="sponsor 1" className="h-40" />
             </div>
@@ -50,12 +50,23 @@ const SponsorItem = ({ sponsor }) => {
 
 const SponsorList = ({ sponsor }) => {
     return (
-        // <div></div>
-        <img src={sponsor.image} alt="Sponsor 1" className="w-32 h-32" />
-    )
+        <div className={`flex odd:justify-between odd:flex-row-reverse items-center mb-8 gap-10 bg-sponsor-body p-4 rounded-2xl`}>
+            <div className="flex-shrink-0">
+                <img src={sponsor.image} alt="sponsor 1" className="h-40" />
+            </div>
+            <div className="text-navbar">
+                <h3 className="text-2xl font-bold md:mb-2 ">{sponsor.name}</h3>
+                <p className="md:mb-2">{sponsor.description}</p>
+            </div>
+        </div>
+    );
+    // return (
+    //     // <div></div>
+    //     <img src={sponsor.image} alt="Sponsor 1" className="w-32 h-32" />
+    // )
 }
 
-Items.propTypes = {
+EventItems.propTypes = {
     event: PropTypes.object.isRequired,
 };
 SponsorList.propTypes = {
@@ -66,4 +77,4 @@ SponsorItem.propTypes = {
     sponsor: PropTypes.object.isRequired,
 };
 
-export { Items, SponsorList, SponsorItem };
+export { EventItems, SponsorList, SponsorItem };
