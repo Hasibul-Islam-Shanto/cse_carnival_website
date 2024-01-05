@@ -2,10 +2,6 @@ export const events = {
     "iupc": {
         name: "IUPC",
         description: "Description for Event 1. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
-        registrationDate: "TBA",
-        registrationFee: "0 TK",
-        paymentDeadline: "TBA",
-        prizeMoney: "TBA",
         image: "/image/event/Event 1.png",
         registration: "/",
         link: "/iupc",
@@ -55,10 +51,6 @@ export const events = {
     "hackathon": {
         name: "Hackathon",
         description: "Description for Event 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        registrationDate: "TBA",
-        registrationFee: "0 TK",
-        paymentDeadline: "TBA",
-        prizeMoney: "TBA",
         image: "/image/event/Event 2.png",
         registration: "/",
         link: "/hackathon",
@@ -108,10 +100,6 @@ export const events = {
     "dlsprint": {
         name: "DL Sprint",
         description: "Description for Event 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        registrationDate: "TBA",
-        registrationFee: "0 TK",
-        paymentDeadline: "TBA",
-        prizeMoney: "TBA",
         image: "/image/event/Event 1.png",
         registration: "/",
         link: "/dlsprint",
@@ -165,10 +153,6 @@ export const events = {
     "codebattle": {
         name: "Code Battle",
         description: "Where Gaming Meets Coding, and Victory is Written in Code!",
-        registrationDate: "15 January - 1 February",
-        registrationFee: "Free",
-        paymentDeadline: "N/A",
-        prizeMoney: "TBA",
         image: "/image/event/Event 2.png",
         registration: "/",
         link: "/codebattle",
