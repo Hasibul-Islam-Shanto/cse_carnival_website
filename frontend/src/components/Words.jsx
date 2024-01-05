@@ -52,7 +52,7 @@ const Words = () => {
   
     return (
       <div className="text-center mt-10">
-        <h1 className="text-3xl font-bold mb-6 text-navbar-button">Few Words From...</h1>
+        <h1 className="text-3xl font-bold mb-6 text-navbar-button-hover">Few Words From...</h1>
         <Slider {...settings} className="py-6" ref={sliderRef}>
           {quotesData.map((quote) => (
             <div key={quote.id} className="flex-shrink-0 mx-3" style={{ minWidth: '300px' }}>
@@ -66,8 +66,8 @@ const Words = () => {
         </Slider>
         <div className="flex justify-center">
           <div className="arrow-row flex gap-6">
-            <NextArrow onClick={handleNext} />
-            <PrevArrow onClick={handlePrev} />
+            <NextArrow onClick={handlePrev} />
+            <PrevArrow onClick={handleNext} />
           </div>
         </div>
       </div>

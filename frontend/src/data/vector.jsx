@@ -4,7 +4,7 @@ export const HomeLeft = () => {
         <img
             src="/image/background/HomeLeft.svg"
             alt="Vector Art 1"
-            style={{ position: 'absolute', top: '20rem', left: '0rem', transparency: '0.5' }}
+            style={{ position: 'absolute', top: '20rem ', left: '0rem', transparency: '0.5' }}
         />
     );
 };
@@ -34,7 +34,7 @@ export const HomeRight2 = () => {
         <img
             src="/image/background/HomeRight2.png"
             alt="Vector Art 4"
-            style={{ position: 'absolute', top: '135rem', right: '0rem', opacity: '1', zIndex: -1 }}
+            style={{ position: 'absolute', top: '180rem', right: '0rem', opacity: '1', zIndex: -1 }}
         />
     );
 };
@@ -44,7 +44,7 @@ export const IUPCRight= () => {
         <img
             src="/image/background/IUPCRight.png"
             alt="Vector Art 3"
-            style={{ position: 'absolute', top: '0rem', right: '0rem' }}
+            style={{ position: 'absolute', top: '28rem', right: '0rem' }}
         />
     );
 };
@@ -54,7 +54,7 @@ export const IUPCLeft= () => {
         <img
             src="/image/background/IUPCLeft.png"
             alt="Vector Art 3"
-            style={{ position: 'absolute', top: '0rem', left: '0rem' }}
+            style={{ position: 'absolute', top: '75rem', left: '0rem' }}
         />
     );
 };

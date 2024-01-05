@@ -40,7 +40,7 @@ const DLSprint = () => {
         <DLSprintRight />
       </div>
       <div className='text-navbar z-10 relative px-28'>
-        <Banner link="/image/banner/bannerDLSprint.jpg" />
+        <Banner link="/image/banner/bannerCodeBattle.jpg" />
         <h2 className="text-4xl font-bold md:my-6 py-5 md:mx-64 text-navbar-button text-center bg-navbar-button bg-opacity-10 rounded-2xl border border-navbar-button border-opacity-30">Deep Learning Sprint</h2>
         <Tab child1={description} child2={announcment} child3={download} />
         <div className='py-10 w-full flex justify-center'>

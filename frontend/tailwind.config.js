@@ -25,7 +25,19 @@ export default {
         'navbar-link':"#F0E0C6",
         'tab-header': '#F6EAD8',
         'card-body' : '#DB7B1B12',
-        'organizer-body' : '#280847CC' 
+        'organizer-body' : '#280847CC',
+        'sponsor-body' : '#2808470D ',
+        'iupc-body' : '#F0E0C62B',
+        'iupc-border' : '#F0E0C680',
+        'hackathon-body' : '#3F7A7B0D',
+        'hackathon-border' : '#F0E0C680',
+        'dlsprint-body' : '#DB7B1B0D',
+        'dlsprint-border' : '#F0E0C680',
+        'codebattle-body' : '#2808470D',
+        'codebattle-border' : '',
+        'aboutus-body' : '#F0E0C647',
+        'aboutus-border' : '#F0E0C6',
+        
       },
       backgroundImage: {
         'navbar-texture': "url('/image/background/Navbar Background Image.png')",

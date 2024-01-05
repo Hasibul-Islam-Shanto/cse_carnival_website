@@ -10,6 +10,8 @@ export const events = [
         registration: "/",
         link: "/iupc",
         details: "",
+        bg: "bg-iupc-body",
+        border: "border-iupc-border",
     },
     {
         name: "Hackathon",
@@ -22,6 +24,8 @@ export const events = [
         registration: "/",
         link: "/hackathon",
         details: "",
+        bg: "bg-hackathon-body",
+        border: "border-hackathon-border",
     },
     {
         name: "DL Sprint",
@@ -34,6 +38,8 @@ export const events = [
         registration: "/",
         link: "/dlsprint",
         details: "",
+        bg: "bg-dlsprint-body",
+        border: "border-dlsprint-border",
     },
     {
         name: "Code Battle",
@@ -46,6 +52,8 @@ export const events = [
         registration: "/",
         link: "/codebattle",
         details: "Do you love gaming? \n \n Do you also love coding? \n \n We have news for you. We will present to you a gaming environment where the power to control lies not in a mere controller but in the elegance of your code. Your digital warriors, crafted with the brilliance of your programming finesse in your favourite programming language, will engage in a fierce showdown against the bots of your adversaries. It's not just a game; it's an epic battle of tactics, a symphony of skill where your code reigns supreme.",
+        bg: "bg-codebattle-body",
+        border: "border-codebattle-border",
     }
 ];
 
