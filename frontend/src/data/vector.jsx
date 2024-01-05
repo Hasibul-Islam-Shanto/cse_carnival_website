@@ -44,15 +44,27 @@ export const IUPCRight= () => {
         <img
             src="/image/background/IUPCRight.png"
             alt="Vector Art 3"
-            style={{ position: 'absolute', top: '45rem', right: '0rem' }}
+            style={{ position: 'absolute', top: '0rem', right: '0rem' }}
         />
     );
 };
 
+export const IUPCLeft= () => {
+    return (
+        <img
+            src="/image/background/IUPCLeft.png"
+            alt="Vector Art 3"
+            style={{ position: 'absolute', top: '0rem', left: '0rem' }}
+        />
+    );
+};
+
+
+
 export const DLSprintLeft = () => {
     return (
         <img
-            src="/image/background/DLSpringLeft.png"
+            src="/image/background/DLSprintLeft.png"
             alt="Vector Art 2"
             style={{ position: 'absolute', top: '39rem', left: '-5rem' }}
         />
@@ -62,7 +74,7 @@ export const DLSprintLeft = () => {
 export const DLSprintRight = () => {
     return (
         <img
-            src="/image/background/DLSpringRight.png"
+            src="/image/background/DLSprintRight.png"
             alt="Vector Art 2"
             style={{ position: 'absolute', top: '30.3rem', right: '-5.5rem' }}
         />
