@@ -9,6 +9,7 @@ import { IUPCSponsor } from '../data/data';
 const IUPC = () => {
   const description = (
     <div className='flex flex-col gap-10'>
+      
       <div>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic vero excepturi natus eum illum molestias ipsum delectus similique laudantium quas! Minus commodi maxime numquam nostrum sit sed velit atque nihil.
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias at eveniet commodi excepturi voluptas, cum officiis aliquam hic suscipit saepe itaque in nesciunt laboriosam dignissimos odit quos quaerat consequatur necessitatibus.
@@ -60,7 +61,7 @@ const IUPC = () => {
 
     <div className=' text-navbar px-28'>
       <Banner link="/image/banner/bannerIUPC.png" />
-      <h2 className=" text-4xl font-extrabold md:my-6 py-5 md:mx-20  text-navbar-button text-center bg-navbar-button bg-opacity-10 rounded-2xl border border-navbar-button border-opacity-30">Inter University Programming Contest</h2>
+      <h2 className=" text-4xl font-bold md:my-6 py-5 md:mx-20  text-navbar-button text-center bg-navbar-button bg-opacity-10 rounded-2xl border border-navbar-button border-opacity-30">Inter University Programming Contest</h2>
       <Tab child1={description} child2={announcment} child3={download} />
       <div className='py-10 w-full flex justify-center'>
         <PrimaryButton text='Register' />
