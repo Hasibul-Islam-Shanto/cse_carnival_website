@@ -1,36 +1,4 @@
-export const IUPCShortDescription = [
-    {
-      title: "Platform",
-      value: "CodingGame"
-    },
-    {
-      title: "Registration Date",
-      value: "15 January - 1 February"
-    },
-    {
-      title: "Running Time",
-      value: "2 - 16 February"
-    },
-    {
-      title: "Registration Fee: Free",
-      value: "Free"
-    },
-    {
-      title: "Prize",
-      value: "TBA"
-    },
-];
 
-export const IUPCLongDescription = [
-    {
-      title: "Resource Needed",
-      value: "1. Banner <br/> 2. Announcement Template"
-    },
-    {
-      title: "Details",
-      value: "Do you love gaming? Do you also love coding?<br/><br/>We have news for you.<br/><br/>We will present to you a gaming environment where the power to control lies not in a mere controller but in the elegance of your code. Your digital warriors, crafted with the brilliance of your programming finesse in your favourite programming language, will engage in a fierce showdown against the bots of your adversaries. It's not just a game; it's an epic battle of tactics, a symphony of skill where your code reigns supreme."
-    }
-];
 export const dlSpringShortDescription = [
     {
       title: "Platform",

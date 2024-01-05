@@ -4,21 +4,20 @@ import Tab from '../components/Tab';
 import { PrimaryButton } from '../components/Button';
 import Banner from '../components/Banner';
 import SponsoredBy from '../components/SponsoredBy';
-import { IUPCSponsor } from '../data/data';
+import { IUPCSponsor, events } from '../data/data';
 import { Details, QuickDetails } from '../components/Details';
-import { IUPCLongDescription, IUPCShortDescription } from '../data/eventDetails';
 
 const IUPC = () => {
   const description = (
     <div className='flex flex-col px-4 gap-10'>
       <div className='flex flex-col gap-2 '>
-        <QuickDetails className="bg-amber-600 border-orange-600" description={IUPCShortDescription[0]}/>
-        <QuickDetails className="bg-slate-500 border-slate-500" description={IUPCShortDescription[1]}/>
-        <QuickDetails className="bg-amber-100 border-amber-100" description={IUPCShortDescription[2]}/>
-        <QuickDetails className="bg-amber-600 border-orange-600" description={IUPCShortDescription[3]}/>
-        <QuickDetails className="bg-amber-600 border-orange-600" description={IUPCShortDescription[4]}/>
+        <QuickDetails className="bg-amber-600 border-orange-600" description={events[0].shortDescription[0]}/>
+        <QuickDetails className="bg-slate-500 border-slate-500" description={events[0].shortDescription[1]}/>
+        <QuickDetails className="bg-amber-100 border-amber-100" description={events[0].shortDescription[2]}/>
+        <QuickDetails className="bg-amber-600 border-orange-600" description={events[0].shortDescription[3]}/>
+        <QuickDetails className="bg-amber-600 border-orange-600" description={events[0].shortDescription[4]}/>
       </div>
-      {IUPCLongDescription.map((item) => (
+      {events[0].longDescription.map((item) => (
         <Details key={item.title} description={item} />
       ))}
     </div>
