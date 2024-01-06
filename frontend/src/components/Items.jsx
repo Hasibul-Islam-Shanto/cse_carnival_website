@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 const EventItems = ({ event }) => {
     return (
-        <div className={`flex ${event.bg} ${event.border} odd:justify-between odd:flex-row-reverse items-center mb-8 gap-10 border p-5 rounded-2xl`}>
+        <div className={`flex flex-col lg:flex-row ${event.bg} ${event.border} lg:odd:justify-between lg:odd:flex-row-reverse items-center mb-8 gap-10 border p-5 rounded-2xl`}>
             <div className="flex-shrink-0">
                 <img src={event.image} alt="Event 1" className="" />
             </div>
@@ -16,7 +16,7 @@ const EventItems = ({ event }) => {
                 <p className="font-bold ">{event.shortDescription[2].title} : <span className="">{event.shortDescription[2].value}</span> </p>
                 <p className="font-bold ">{event.shortDescription[3].title} : <span className="">{event.shortDescription[3].value}</span> </p>
                 <p className="font-bold ">{event.shortDescription[4].title} : <span className="">{event.shortDescription[4].value}</span> </p>
-                <div className="flex mt-4 space-x-6">
+                <div className="flex mt-4 space-x-6 w-full justify-center lg:justify-start">
                     {event.registration && (
                         <Link to={event.registration}>
                             <PrimaryButton text="Register" />
@@ -35,7 +35,7 @@ const EventItems = ({ event }) => {
 
 const SponsorItem = ({ sponsor }) => {
     return (
-        <div className={`flex odd:justify-between odd:flex-row-reverse items-center mb-8 gap-10 bg-sponsor-body p-4 rounded-2xl`}>
+        <div className={`flex flex-col lg:flex-row lg:odd:justify-between lg:odd:flex-row-reverse items-center mb-8 gap-10 bg-sponsor-body p-4 rounded-2xl`}>
             <div className="flex-shrink-0">
                 <img src={sponsor.image} alt="sponsor 1" className="h-40" />
             </div>
@@ -50,7 +50,7 @@ const SponsorItem = ({ sponsor }) => {
 
 const SponsorList = ({ sponsor }) => {
     return (
-        <div className={`flex odd:justify-between odd:flex-row-reverse items-center mb-8 gap-10 bg-sponsor-body p-4 rounded-2xl`}>
+        <div className={`flex flex-col lg:flex-row lg:odd:justify-between lg:odd:flex-row-reverse items-center mb-8 gap-10 bg-sponsor-body p-4 rounded-2xl`}>
             <div className="flex-shrink-0">
                 <img src={sponsor.image} alt="sponsor 1" className="h-40" />
             </div>
